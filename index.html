@@ -2,11 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>เว็บของมี๊</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>fallinlove 💗</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 50px;
+      color: #444;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d63384;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #e0559e;
+    }
+    #message {
+      font-size: 1.4rem;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h1>สุขสันต์วันเกิดมี๊คนสวย! 💖</h1>
-  <p>ทำเว็บนี้ให้มี๊ด้วยความรักมากๆๆๆ</p>
+  <h1>มี๊มิลคะ 🥺</h1>
+  <p>มีเรื่องจะบอก...</p>
+  <button onclick="confess()">กดดูสิคะ 💌</button>
+  <div id="message"></div>
+
+  <script>
+    function confess() {
+      const msg = document.getElementById("message");
+      msg.innerHTML = "หนูชอบมี๊นะคะ 💗 เป็นแฟนหนูได้มั้ยคะ";
+    }
+  </script>
 </body>
 </html>
